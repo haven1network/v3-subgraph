@@ -18,7 +18,6 @@ import {
   getTrackedAmountUSD,
   sqrtPriceX96ToTokenPrices,
 } from '../../utils/pricing'
-// revaluation on price updates is not enabled to ensure compile stability
 
 export function handleSwap(event: SwapEvent): void {
   handleSwapHelper(event)
@@ -233,7 +232,5 @@ export function handleSwapHelper(event: SwapEvent, subgraphConfig: SubgraphConfi
     pool.save()
     token0.save()
     token1.save()
-
-    // Revalue owners can be re-enabled after stability validation
   }
 }

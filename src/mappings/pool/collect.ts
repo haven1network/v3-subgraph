@@ -106,7 +106,5 @@ export function handleCollectHelper(event: CollectEvent, subgraphConfig: Subgrap
   pool.save()
   collect.save()
 
-  // Phase 2: Collect does not change TVL of locked capital (fees realized); snapshot only if needed.
-
   return
 }
