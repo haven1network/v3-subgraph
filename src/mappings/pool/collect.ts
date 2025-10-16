@@ -1,4 +1,4 @@
-import { BigInt } from '@graphprotocol/graph-ts'
+import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 
 import { Bundle, Collect, Factory, Pool, Token } from '../../types/schema'
 import { Collect as CollectEvent } from '../../types/templates/Pool/Pool'
